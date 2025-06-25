@@ -33,16 +33,16 @@ function DemoInfo() {
   );
 }
 
-export default function SignIn() {
-  return (
-    <SignInPage
-      providers={providerMap}
-      signIn={signIn}
-      slots={{
-        forgotPasswordLink: ForgotPasswordLink,
-        signUpLink: SignUpLink,
-        subtitle: DemoInfo,
-      }}
-    />
-  );
-}
+// export default function SignIn() {
+//   return (
+//     <SignInPage
+//       // providers={providerMap}
+//       signIn={signIn}
+//       slots={{
+//         forgotPasswordLink: ForgotPasswordLink,
+//         signUpLink: SignUpLink,
+//         subtitle: DemoInfo,
+//       }}
+//     />
+//   );
+// }

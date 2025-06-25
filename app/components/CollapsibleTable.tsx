@@ -38,7 +38,7 @@ const CollapsibleTable = ({ dataTable, cityName }: any) => {
             renderCell: (item: any) => (
                 <div style={{
                     color: item?.color || '#3498db',
-                    textAlign: 'center',
+                    textAlign: 'left',
                     padding: '8px',
                     fontWeight: 'bold',
                     wordWrap: 'break-word',  // Перенос длинных слов
