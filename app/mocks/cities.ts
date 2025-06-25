@@ -280,6 +280,7 @@ clustersList.forEach(cluster => {
 
     cluster.cities.forEach(city => {
         indexKeys.forEach(key => {
+            // @ts-ignore
             sums[key] += city.scores[key];
         });
     });
@@ -296,6 +297,7 @@ const totalSums: Record<string, number> = Object.fromEntries(indexKeys.map(key =
 
 allCities.forEach(city => {
     indexKeys.forEach(key => {
+        // @ts-ignore
         totalSums[key] += city.scores[key];
     });
 });
@@ -306,7 +308,7 @@ indexKeys.forEach(key => {
 });
 
 
-const createCityItems = (indexes) => [
+const createCityItems = (indexes: { demography_index: any; health_index: any; employment_index: any; education_index: any; income_index: any; housing_index: any; social_protection_index: any; safety_index: any; infrastructure_index: any; }) => [
     {
         id: "Демографический потенциал",
         label: "Демографический потенциал",
