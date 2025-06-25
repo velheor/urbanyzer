@@ -45,8 +45,7 @@ export default function GoogleMapComponent() {
 
     return (
         <LoadScript loadingElement={<Typography sx={{ fontSize: '35px', height: '100px', color: 'hsl(210, 98%, 48%)', fontWeight: 'bold', display: 'flex', justifyContent: 'center' }}>Идёт загрузка карты, подождите...</Typography>}
-                    // googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}
-            googleMapsApiKey={'AIzaSyD9_viwyG6i2XAsOLDIsou40uPVuivzWWs'}
+                    googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}
         >
             <GoogleMap
                 mapContainerStyle={containerStyle}
