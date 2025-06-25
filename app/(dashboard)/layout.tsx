@@ -6,6 +6,7 @@ import { ThemeSwitcher } from '@toolpad/core/DashboardLayout';
 import Copyright from '../components/Copyright';
 import SidebarFooterAccount, { ToolbarAccountOverride } from './SidebarFooterAccount';
 import Link from '@mui/material/Link';
+import {Suspense} from "react";
 
 function CustomActions() {
     return (
@@ -18,6 +19,8 @@ function CustomActions() {
 
 export default function Layout(props: { children: React.ReactNode }) {
     return (
+        <Suspense fallback={<div>Loading...</div>}>
+
         <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             <CssBaseline />
             <AppBar
@@ -56,5 +59,6 @@ export default function Layout(props: { children: React.ReactNode }) {
                 <Copyright sx={{ my: 4 }} />
             </Box>
         </Box>
+        </Suspense>
     );
 }

@@ -1,8 +1,5 @@
 'use client';
 import * as React from 'react';
-import { PageContainer } from '@toolpad/core/PageContainer';
-import CustomDataGrid from "@/app/components/CustomDataGrid";
-import {columns, rows} from "@/app/mocks/gridOrdersData";
 import {useParams} from "next/navigation";
 import CityOneMainInfo from "@/app/components/CityOneMainInfo";
 import Box from "@mui/material/Box";
