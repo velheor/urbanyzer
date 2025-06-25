@@ -41,7 +41,7 @@ export const providerMap = providers.map((provider) => {
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers,
-  secret: process.env.AUTH_SECRET,
+  secret: 'cNU2IkgN6v9dVQ1EqbCe4Npqh0IbM6VEsMBpg69wiyU=',
   pages: {
     signIn: '/auth/signin',
   },
